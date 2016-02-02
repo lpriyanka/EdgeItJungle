@@ -1,0 +1,18 @@
+body {
+  font  : 20px sans-serif;
+
+  padding : 50px;
+  margin  : 0;
+
+  
+}
+
+form {
+  position: relative;
+
+  width  : 5000px;
+  height : 300px;
+  margin : 0 auto;
+
+  
+}
