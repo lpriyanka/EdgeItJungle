@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #tfnewsearch{
 		float:right;
 		padding:20px;
@@ -40,3 +41,15 @@ th:hover
 {
              background-color:yellow;
 }  
+=======
+li { 
+	display: inline;
+	padding: 50px;
+	margin: 20px;
+}
+.header{
+	display: inline;
+	padding: 50px;
+	margin: 20px;
+}
+>>>>>>> 4390c267593c91d97fc28b90fac8685a44cd6f5b
