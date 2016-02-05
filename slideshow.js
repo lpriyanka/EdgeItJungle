@@ -1,24 +1,20 @@
- var image = ["images/slide1.png","images/slide2.jpg","images/slide3.jpg","images/slide4.png"];
-    
+var myImage = document.getElementById("images/deals.jpg");
 
-//var step=1;
-    var slideIt = function()
-             {
-               for(var i = 0;i<image.lenth;i++){
-                 var img = document.getElementById("slideImg");
-                 img.src = image[i];
-               }
+var imageArray = ["_images/overlook.jpg","_images/slide1.jpg","_images/slide2.jpg",
+          "_images/slide3.jpg","_images/clide4.jpg"];
+var imageIndex = 0;
 
-                // var step=1;
-                // document.images.slide.src = eval("image"+step+".src")
-                // if(step<2)
-                //     step++
-                // else
-                //     step=1
-                //window.onload = function(){
-                  //setTimeout(function(){slideit(),1000);
-                  setTimeout(function(){ slideIt() }, 3000);
-                //}
-                
-            
-            
+function changeImage() {
+  myImage.setAttribute("src",imageArray[imageIndex]);
+  imageIndex++;
+  if (imageIndex >= imageArray.length) {
+    imageIndex = 0;
+  }
+}
+
+// setInterval is also in milliseconds
+var intervalHandle = setInterval(changeImage,5000);
+
+myImage.onclick =  function() {
+  clearInterval(intervalHandle);
+};
