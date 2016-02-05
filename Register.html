@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">  
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </head>
+  <style>
+
+#tfnewsearch
+{
+    float:right;
+    padding:20px;
+  }
+  
+  .tftextinput{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    border:1px solid #0076a3; border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+  }
+  .tfbutton {
+    
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+  }
+  .tfbutton:hover {
+    text-decoration: none;
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+  }
+  
+  .tfclear{
+    clear:both;
+  }
+   
+    th:hover
+   {
+             background-color:silver;
+  }
+  </style>
+<body>
+  <header>
+         <a href="index.html" ><img src="images/logo.png" alt="logo" align="left" width="100" height="100" ;/> </a> 
+        </header>
+
+<div id="tfheader">
+    <form id="tfnewsearch" method="get" action="http://www.google.com">
+    <input type="text" class="tftextinput" name="q" size="21" maxlength="200"><input type="submit" value="search" class="tfbutton">
+    </form>
+  <div class="tfclear"></div>
+  </div>
+<form id="search" method="get" action="http://www.google.com">
+  <nav>   
+               <table style="width:100%">
+                   <tr height="50">
+                    <th><a href="deals.html" >Today's Deals</a></th>
+                    <th><a href="electronics.html" >Electronics</a></th>
+                    <th><a href="clothing.html" >Clothing</a></th>
+                    <th><a href="homegarden.html">Home&Garden</a></th>
+                    <th><a href="Register.html" >Register</a></th>
+                    <th><a href="Login.html">Login</a></th>
+                    
+                    </tr>
+                </table>
+                 </nav>
+  <h1>SignUp</h1>
+<form action="action_page.php" ><br>
+  First name:<br>
+  <input type="text" name="firstname" >
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" >
+  <br>
+  Email Id:<br>
+  <input type="text" name="Email Id">
+  <br>
+ Phone Number:<br>
+  <input type="text" name="Phone Number">
+  <br>
+ Gender:<br>
+  <input type="radio" name="gender" value="male" > Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="submit" value="Submit">
+
+ 
+</body>
+</html>
